@@ -1,0 +1,12 @@
+/**
+ * Helper chip - splits one input into two wires:
+ */
+
+CHIP Wire {
+	IN in;
+	OUT out1, out2;
+	
+	PARTS:
+	And(a=in, b=in, out=out1);
+	And(a=in, b=in, out=out2);
+}
