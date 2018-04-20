@@ -15,6 +15,5 @@ CHIP Or16 {
     PARTS:
     Not16(in=a, out=NOTa);
     Not16(in=b, out=NOTb);
-    And16(a=NOTa, b=NOTb, out=NOTaAndNOTb);
-    Not16(in=NOTaAndNOTb, out=out);
+    Nand16(a=NOTa, b=NOTb, out=out);
 }
